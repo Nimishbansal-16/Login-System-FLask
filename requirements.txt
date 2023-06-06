@@ -1,0 +1,4 @@
+flask==1.0.2
+authy==2.2.3
+flask_mysqldb==1.0.1
+passlib==1.7.4
