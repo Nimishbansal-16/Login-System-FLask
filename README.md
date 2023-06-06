@@ -7,6 +7,17 @@ virtualenv env
 source env/bin/activate
 pip install -r requirements.txt
 ```
+
+Create Database and table using the following command:
+
+```
+create database loginsystem
+use loginsystem
+CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, phone_number VARCHAR(15), email VARCHAR(255) UNIQUE, password VARCHAR(255));
+```
+
+Also update mysql user and password in the main.py file
+
 ## Running
 
 ```python main.py```
