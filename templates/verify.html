@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Phone Verification</title>
+  </head>
+
+  <body>
+    <h1>Verification</h1>
+    {% for mesg in get_flashed_messages() %}
+    <div>
+      <h4>{{ mesg }}</h4>
+    </div>
+    {% endfor %}
+    <form action="/verify" accept-charset="UTF-8" method="post">
+      <div>
+        <label>Enter the code you were sent:</label>
+        <input name="token" id="token"></select>
+      </div>
+      <button name="button" type="submit">Verify</button>
+      <p>Go back?<a href="/phone_login" style="color:blue;">Click here</a> </p><br>
+    </form>
+  </body>
+</html>
